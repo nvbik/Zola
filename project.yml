@@ -1,0 +1,35 @@
+name: ZaloWebDesktop
+options:
+  bundleIdPrefix: com.custom
+  deploymentTarget:
+    iOS: "15.0"
+
+targets:
+  ZaloWebDesktop:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: Zalo Web
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSPhotoLibraryUsageDescription: "Cho phép chọn ảnh để gửi trên Zalo Web"
+        NSCameraUsageDescription: "Cho phép sử dụng camera trong Zalo Web"
+        NSMicrophoneUsageDescription: "Cho phép sử dụng micro để gửi tin nhắn thoại"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.custom.zalowebdesktop
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        
